@@ -82,18 +82,18 @@ public class WebConfigurer extends WebMvcConfigurerAdapter
 		return viewResolver;
 	}
 
-//	@Bean
-//	public MarshallingView xmlViewer()
-//	{
-//		Jaxb2Marshaller marshaller = new Jaxb2Marshaller();
-//
-//		marshaller.setClassesToBeBound(new Class[]
-//		{ XmlChartModelConverter.Order.class });
-//
-//		MarshallingView view = new MarshallingView(marshaller);
-//
-//		return view;
-//	}
+	@Bean
+	public MarshallingView xmlViewer()
+	{
+		Jaxb2Marshaller marshaller = new Jaxb2Marshaller();
+
+		marshaller.setClassesToBeBound(new Class[]
+		{ XmlChartModelConverter.Order.class });
+
+		MarshallingView view = new MarshallingView(marshaller);
+
+		return view;
+	}
 
 	@Override
 	public void addResourceHandlers(ResourceHandlerRegistry registry)

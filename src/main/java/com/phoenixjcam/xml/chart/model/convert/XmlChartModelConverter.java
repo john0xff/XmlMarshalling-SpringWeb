@@ -1,7 +1,6 @@
 package com.phoenixjcam.xml.chart.model.convert;
 
 import java.util.List;
-
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
@@ -26,7 +25,6 @@ public class XmlChartModelConverter
 		{
 			this.orders = order;
 		}
-
 	}
 
 	// content root elements
@@ -36,10 +34,8 @@ public class XmlChartModelConverter
 	{
 		@XmlElement(name = "Date")
 		private String date;
-
 		@XmlElement(name = "Quantity")
 		private int quantity;
-
 		@XmlElement(name = "Description")
 		private String description;
 
@@ -84,5 +80,4 @@ public class XmlChartModelConverter
 			this.description = description;
 		}
 	}
-
 }
